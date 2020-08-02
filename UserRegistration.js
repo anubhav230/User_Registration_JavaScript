@@ -42,3 +42,10 @@ if(password2Regex.test(password2))
 else
         console.log("Invalid password");
 
+const password3Regex = RegExp("(?=.*[A-Z])(?=.*\d)[a-zA-Z0-9]{8}");
+const password3 = "Ahd5jddf"
+if(password3Regex.test(password3))
+        console.log("valid password");
+else
+        console.log("Invalid password");
+
