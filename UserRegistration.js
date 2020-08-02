@@ -11,3 +11,12 @@ if(lastNameregex.test(lastName))
         console.log("valid Last Name");
 else
         console.log("Invalid Last Name");
+
+const mailregex = RegExp("^[a-zA-Z0-9]+([._+-][0-9a-zA-Z]+)*@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2,3})?$");
+const mail = "anubhavsingh230@gmail.abc.com"
+if(mailregex.test(mail))
+        console.log("valid mail");
+else
+        console.log("Invalid mail");
+
+
