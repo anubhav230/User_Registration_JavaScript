@@ -28,9 +28,17 @@ else
         console.log("Invalid Mobile Number");
 
 
-const passwordRegex = RegExp("^[0-9 a-z A-Z \! \@ \#\$\%\^\&\*]{8}$");
+const password1Regex = RegExp("^[0-9 a-z A-Z \! \@ \#\$\%\^\&\*]{8}$");
 const password = "dh47jdf7"
-if(passwordRegex.test(password))
+if(password1Regex.test(password))
         console.log("valid password");
 else
         console.log("Invalid password");
+
+const password2Regex = RegExp("(?=.*[A-Z])[a-zA-Z]{8}");
+const password2 = "Ahhjjddd"
+if(password2Regex.test(password2))
+        console.log("valid password");
+else
+        console.log("Invalid password");
+
