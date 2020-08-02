@@ -20,3 +20,10 @@ else
         console.log("Invalid mail");
 
 
+const regex = RegExp("^[1-9]{2,5}[\ ]{1}[1-9]{1}[0-9]{9}$");
+const mobileNumber = "91 9885616725"
+if(regex.test(mobileNumber))
+        console.log("valid Last Name");
+else
+        console.log("Invalid Last Name");
+
