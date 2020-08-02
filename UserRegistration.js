@@ -23,7 +23,14 @@ else
 const regex = RegExp("^[1-9]{2,5}[\ ]{1}[1-9]{1}[0-9]{9}$");
 const mobileNumber = "91 9885616725"
 if(regex.test(mobileNumber))
-        console.log("valid Last Name");
+        console.log("valid Mobile Number");
 else
-        console.log("Invalid Last Name");
+        console.log("Invalid Mobile Number");
 
+
+const passwordRegex = RegExp("^[0-9 a-z A-Z \! \@ \#\$\%\^\&\*]{8}$");
+const password = "dh47jdf7"
+if(passwordRegex.test(password))
+        console.log("valid password");
+else
+        console.log("Invalid password");
